@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  BlocksViewController.swift
 //  drag_and_drop
 //
 //  Created by Morris Uhlenbrauck on 5/15/23.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class BlocksViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
