@@ -17,6 +17,7 @@
 		A9CCC15F2A12D6AD008AB509 /* drag_and_dropUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CCC15E2A12D6AD008AB509 /* drag_and_dropUITests.swift */; };
 		A9CCC1612A12D6AD008AB509 /* drag_and_dropUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CCC1602A12D6AD008AB509 /* drag_and_dropUITestsLaunchTests.swift */; };
 		A9CCC1702A12D8F8008AB509 /* APIRectangles.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CCC16F2A12D8F8008AB509 /* APIRectangles.swift */; };
+		A9CCC1732A12D961008AB509 /* PeakRectangleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CCC1722A12D961008AB509 /* PeakRectangleService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		A9CCC15E2A12D6AD008AB509 /* drag_and_dropUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = drag_and_dropUITests.swift; sourceTree = "<group>"; };
 		A9CCC1602A12D6AD008AB509 /* drag_and_dropUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = drag_and_dropUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A9CCC16F2A12D8F8008AB509 /* APIRectangles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRectangles.swift; sourceTree = "<group>"; };
+		A9CCC1722A12D961008AB509 /* PeakRectangleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeakRectangleService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		A9CCC13C2A12D6AB008AB509 /* drag_and_drop */ = {
 			isa = PBXGroup;
 			children = (
+				A9CCC1712A12D93B008AB509 /* Network */,
 				A9CCC16E2A12D8D1008AB509 /* Models */,
 				A9CCC13D2A12D6AB008AB509 /* AppDelegate.swift */,
 				A9CCC13F2A12D6AB008AB509 /* SceneDelegate.swift */,
@@ -136,6 +139,14 @@
 				A9CCC16F2A12D8F8008AB509 /* APIRectangles.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		A9CCC1712A12D93B008AB509 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A9CCC1722A12D961008AB509 /* PeakRectangleService.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,6 +284,7 @@
 				A9CCC1422A12D6AB008AB509 /* ViewController.swift in Sources */,
 				A9CCC13E2A12D6AB008AB509 /* AppDelegate.swift in Sources */,
 				A9CCC1402A12D6AB008AB509 /* SceneDelegate.swift in Sources */,
+				A9CCC1732A12D961008AB509 /* PeakRectangleService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
