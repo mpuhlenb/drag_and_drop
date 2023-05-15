@@ -20,6 +20,7 @@
 		A9CCC1732A12D961008AB509 /* PeakRectangleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CCC1722A12D961008AB509 /* PeakRectangleService.swift */; };
 		A9CCC1772A12DA53008AB509 /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CCC1762A12DA53008AB509 /* Block.swift */; };
 		A9CCC1792A12DA72008AB509 /* BlocksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CCC1782A12DA72008AB509 /* BlocksViewModel.swift */; };
+		A9CCC17B2A12DB78008AB509 /* api_rectangles.json in Resources */ = {isa = PBXBuildFile; fileRef = A9CCC17A2A12DB78008AB509 /* api_rectangles.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		A9CCC1722A12D961008AB509 /* PeakRectangleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeakRectangleService.swift; sourceTree = "<group>"; };
 		A9CCC1762A12DA53008AB509 /* Block.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
 		A9CCC1782A12DA72008AB509 /* BlocksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlocksViewModel.swift; sourceTree = "<group>"; };
+		A9CCC17A2A12DB78008AB509 /* api_rectangles.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = api_rectangles.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 		A9CCC13C2A12D6AB008AB509 /* drag_and_drop */ = {
 			isa = PBXGroup;
 			children = (
+				A9CCC17A2A12DB78008AB509 /* api_rectangles.json */,
 				A9CCC1752A12DA0C008AB509 /* ViewController */,
 				A9CCC1712A12D93B008AB509 /* Network */,
 				A9CCC16E2A12D8D1008AB509 /* Models */,
@@ -267,6 +270,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9CCC17B2A12DB78008AB509 /* api_rectangles.json in Resources */,
 				A9CCC14A2A12D6AD008AB509 /* LaunchScreen.storyboard in Resources */,
 				A9CCC1472A12D6AD008AB509 /* Assets.xcassets in Resources */,
 				A9CCC1452A12D6AB008AB509 /* Main.storyboard in Resources */,
