@@ -76,6 +76,7 @@ class BlocksViewModel {
         }
     }
     
+    // TODO: Refactor to pass in key for testability
     func saveBlocks(_ blocks: [Block]) {
         let defaults = UserDefaults.standard
         let encoder = JSONEncoder()
@@ -83,7 +84,8 @@ class BlocksViewModel {
         defaults.set(data, forKey: savedBlocksUserDefault)
     }
     
-    private func fetchSavedBlocks() -> [Block]? {
+    // TODO: Refactor to pass in key for testability
+    func fetchSavedBlocks() -> [Block]? {
         if let data = UserDefaults.standard.data(forKey: savedBlocksUserDefault) {
             do {
                 let decoder = JSONDecoder()
@@ -95,11 +97,13 @@ class BlocksViewModel {
         }
     }
     
+    // TODO: Refactor to pass in key for testability
     private func setLastUseDate() {
         let userDefaults = UserDefaults.standard
         userDefaults.set(Date(), forKey: lastUseDateUserDefault)
     }
     
+    // TODO: Refactor to pass in key for testability
     private func getLastUseDate() -> Date {
         let userDefaults = UserDefaults.standard
         guard let lastUseDate = userDefaults.object(forKey: lastUseDateUserDefault) as? Date else { return Date() }

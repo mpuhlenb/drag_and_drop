@@ -13,9 +13,7 @@
 		A9CCC1452A12D6AB008AB509 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9CCC1432A12D6AB008AB509 /* Main.storyboard */; };
 		A9CCC1472A12D6AD008AB509 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9CCC1462A12D6AD008AB509 /* Assets.xcassets */; };
 		A9CCC14A2A12D6AD008AB509 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9CCC1482A12D6AD008AB509 /* LaunchScreen.storyboard */; };
-		A9CCC1552A12D6AD008AB509 /* drag_and_dropTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CCC1542A12D6AD008AB509 /* drag_and_dropTests.swift */; };
-		A9CCC15F2A12D6AD008AB509 /* drag_and_dropUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CCC15E2A12D6AD008AB509 /* drag_and_dropUITests.swift */; };
-		A9CCC1612A12D6AD008AB509 /* drag_and_dropUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CCC1602A12D6AD008AB509 /* drag_and_dropUITestsLaunchTests.swift */; };
+		A9CCC1552A12D6AD008AB509 /* BlocksViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CCC1542A12D6AD008AB509 /* BlocksViewModelTests.swift */; };
 		A9CCC1702A12D8F8008AB509 /* APIRectangles.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CCC16F2A12D8F8008AB509 /* APIRectangles.swift */; };
 		A9CCC1732A12D961008AB509 /* PeakRectangleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CCC1722A12D961008AB509 /* PeakRectangleService.swift */; };
 		A9CCC1772A12DA53008AB509 /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CCC1762A12DA53008AB509 /* Block.swift */; };
@@ -50,10 +48,8 @@
 		A9CCC1492A12D6AD008AB509 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A9CCC14B2A12D6AD008AB509 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9CCC1502A12D6AD008AB509 /* drag_and_dropTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = drag_and_dropTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A9CCC1542A12D6AD008AB509 /* drag_and_dropTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = drag_and_dropTests.swift; sourceTree = "<group>"; };
+		A9CCC1542A12D6AD008AB509 /* BlocksViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlocksViewModelTests.swift; sourceTree = "<group>"; };
 		A9CCC15A2A12D6AD008AB509 /* drag_and_dropUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = drag_and_dropUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A9CCC15E2A12D6AD008AB509 /* drag_and_dropUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = drag_and_dropUITests.swift; sourceTree = "<group>"; };
-		A9CCC1602A12D6AD008AB509 /* drag_and_dropUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = drag_and_dropUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A9CCC16F2A12D8F8008AB509 /* APIRectangles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRectangles.swift; sourceTree = "<group>"; };
 		A9CCC1722A12D961008AB509 /* PeakRectangleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeakRectangleService.swift; sourceTree = "<group>"; };
 		A9CCC1762A12DA53008AB509 /* Block.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
@@ -91,7 +87,6 @@
 			children = (
 				A9CCC13C2A12D6AB008AB509 /* drag_and_drop */,
 				A9CCC1532A12D6AD008AB509 /* drag_and_dropTests */,
-				A9CCC15D2A12D6AD008AB509 /* drag_and_dropUITests */,
 				A9CCC13B2A12D6AB008AB509 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -126,18 +121,9 @@
 		A9CCC1532A12D6AD008AB509 /* drag_and_dropTests */ = {
 			isa = PBXGroup;
 			children = (
-				A9CCC1542A12D6AD008AB509 /* drag_and_dropTests.swift */,
+				A9CCC1542A12D6AD008AB509 /* BlocksViewModelTests.swift */,
 			);
 			path = drag_and_dropTests;
-			sourceTree = "<group>";
-		};
-		A9CCC15D2A12D6AD008AB509 /* drag_and_dropUITests */ = {
-			isa = PBXGroup;
-			children = (
-				A9CCC15E2A12D6AD008AB509 /* drag_and_dropUITests.swift */,
-				A9CCC1602A12D6AD008AB509 /* drag_and_dropUITestsLaunchTests.swift */,
-			);
-			path = drag_and_dropUITests;
 			sourceTree = "<group>";
 		};
 		A9CCC16E2A12D8D1008AB509 /* Models */ = {
@@ -312,7 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9CCC1552A12D6AD008AB509 /* drag_and_dropTests.swift in Sources */,
+				A9CCC1552A12D6AD008AB509 /* BlocksViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,8 +306,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9CCC15F2A12D6AD008AB509 /* drag_and_dropUITests.swift in Sources */,
-				A9CCC1612A12D6AD008AB509 /* drag_and_dropUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
