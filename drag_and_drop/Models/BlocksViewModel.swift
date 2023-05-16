@@ -32,8 +32,12 @@ class BlocksViewModel {
         self.viewBounds = viewBounds
     }
     
-    func getAPIRectangles() {
+    /**
+     Gets rectangle data from API rectangle service
+     */
+    private func getAPIRectangles() {
         if let url = Bundle.main.url(forResource: apiRectangleFileName, withExtension: "json") {
+            // Setting last use date whenever we get rectangles from the API
             setLastUseDate()
             let rectangleService = PeakRectangleService(baseURLString: url.absoluteString)
             rectangleService.getPublisherForResponse(endpoint: "").sink { completion in
@@ -44,10 +48,15 @@ class BlocksViewModel {
         }
     }
     
+    /**
+     Creates block data for the view controller to build ui blocks
+     */
     func viewLoaded() {
         if let savedBlocks = fetchSavedBlocks(), !savedBlocks.isEmpty, !isBlockDataStale {
             viewBlocks.send(savedBlocks)
         } else {
+            // Fetch rectangles from API if we have no saved blocks or the data is stale
+            getAPIRectangles()
             apiRectangles.sink { [weak self] rectangles in
                 guard let self = self else { return }
                 let blocks = rectangles.rectangles.compactMap {

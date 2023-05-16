@@ -24,7 +24,6 @@ class BlocksViewController: UIViewController {
         self.view.backgroundColor = .clear
 
         blocksViewModel = BlocksViewModel(viewBounds: screenSize)
-        blocksViewModel?.getAPIRectangles()
         blocksViewModel?.viewLoaded()
         blocksViewModel?.viewBlocks.sink { [weak self] blocks in
             for block in blocks {
